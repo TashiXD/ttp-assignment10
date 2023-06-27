@@ -5,6 +5,7 @@ const router = express.Router();
 router.use("/getallstudent", require("./getallstudent"));
 router.use("/addstudent", require("./addstudent"));
 router.use("/customlist", require("./customlist"));
+router.use("/getstudentcollege", require("./getstudentcollege"));
 //handle 404
 router.use("*", (req, res, next)=>{
     const error = new Error('404 Not Found');
